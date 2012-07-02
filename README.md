@@ -4,9 +4,12 @@ To stop any lag in sending SQS push, we have a local listener that accepts
 messages, buffers them and sends them on. Our web-app is then guarranteed low
 latency sending messages to a queue.
 
-Will IAM Role Credentials in needed.
+Will use IAM Role Credentials if not in Environment (`AWS_ACCESS_KEY_ID` and
+`AWS_SECRET_ACCESS_KEY`).
 
 ## Usage
+
+Install dependencies: `npm install`
 
 Configure in the `conf/config.json` to your liking:
 
