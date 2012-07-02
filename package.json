@@ -1,0 +1,7 @@
+{
+  "name": "sqs-proxy",
+  "version": "0.1.0",
+  "dependencies": {
+    "aws2js": "latest"
+  }
+}

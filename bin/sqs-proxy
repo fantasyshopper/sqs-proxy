@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# A Simple SQS Proxy. Can be run in debug mode with one arg "debug"
+#
+SQS_PROXY_PATH="$(dirname $(dirname $(readlink -f $0)))"
+
+/usr/bin/env node $SQS_PROXY_PATH/lib/sqs-proxy.js $1
