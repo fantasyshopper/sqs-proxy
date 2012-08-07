@@ -29,5 +29,10 @@ Now you can send messages in the following format:
 
     <queue name>|<message>\n
 
+or if you want to delay the message by a given number of seconds:
+    
+    <delay in seconds>|<queue name>|<message>\n
+    
 e.g. `"testq|I am a meesage"` followed by a linebreak.
+or   `"30|testq|I am a meesage"` followed by a linebreak.
 
